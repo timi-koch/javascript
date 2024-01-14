@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<button>Drück mich!</button>
+<div class="ausgabe"></div>
+
+
+
+
+
+<script>
+    const button = document.querySelector("button");
+    const ausgabefeld = document.querySelector(".ausgabe");
+    let eingabe = "";
+
+    function ausgeben() {
+        eingabe = prompt("Schreib was!");
+        ausgabefeld.textContent = eingabe;
+        console.log("click!");
+    }
+
+    button.addEventListener("click", ausgeben);
+
+</script>    
+    
+
+</body>
+</html>
